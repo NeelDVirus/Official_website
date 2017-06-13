@@ -1,0 +1,108 @@
+/*
+1-generic
+2-header
+	2.1 nav
+		2.1.1 logo with anchor element
+		2.1.2 menu <ul>-list	
+	2.2	hero-image	
+*/
+
+/* ------------------------- 1-generic -----------------------*/
+html {
+	font-size: 16px;
+}
+html, body, header{
+	height: 100%;
+}
+
+
+/*  ------------------------ 2-header ----------------------  */
+
+/*  --------------- 2.1 nav -------------- */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	margin: auto;
+  width: 100%;
+  height:100px;
+  box-sizing: border-box;
+
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  -ms-transition: height 0.3s;
+  -o-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+nav.smaller {   /* .smaller class added with scrolling event */
+	height: 60px;
+	background-color: #000;
+}
+
+
+/*  ---- 2.1.1 logo with anchor tag ---- */
+nav a {
+	display: block;
+	float: left;
+	line-height: 100%;
+	height: 100%;
+}
+nav a img {
+	display: inline-block;
+	max-height: 100%;
+	width: auto;
+	vertical-align: middle;
+	border: none;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+
+/*  ---- 2.1.2- menu <ul> list of nav ---- */
+nav ul {
+  position: absolute;
+  top:50%;
+  right:2%;
+  transform: translate(0,-50%);
+}
+
+nav ul li{
+	display: inline-block;
+}
+nav ul li a {
+	font-family: helvetica;
+	font-size: 0.75em; /* 12/16 */
+	text-decoration: none;
+	padding: 0px 20px;
+	text-transform: uppercase;
+	color: #fff;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/*  --------------- 2.2 hero-image -------------- */
+.banner {
+	height: 100%;
+	background: url(../materials/images/intro_banner.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.banner h1 {
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.banner h1, .banner p {
+	color: #fff;
+}
